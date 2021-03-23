@@ -1,5 +1,5 @@
 ﻿
-namespace ContadorCaracteres {
+namespace ContaLetrar {
     partial class FormPrincipal {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,7 @@ namespace ContadorCaracteres {
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.Location = new System.Drawing.Point(12, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 24);
@@ -49,7 +49,7 @@ namespace ContadorCaracteres {
             // 
             // txtFrase
             // 
-            this.txtFrase.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtFrase.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFrase.Location = new System.Drawing.Point(13, 33);
             this.txtFrase.Name = "txtFrase";
@@ -60,12 +60,12 @@ namespace ContadorCaracteres {
             // 
             // fdEscolhaFonte
             // 
-            this.fdEscolhaFonte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fdEscolhaFonte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.fdEscolhaFonte.FontMustExist = true;
             // 
             // btnFonte
             // 
-            this.btnFonte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnFonte.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnFonte.Location = new System.Drawing.Point(13, 62);
             this.btnFonte.Name = "btnFonte";
             this.btnFonte.Size = new System.Drawing.Size(232, 32);
@@ -76,7 +76,7 @@ namespace ContadorCaracteres {
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(251, 62);
             this.label2.Name = "label2";
@@ -86,7 +86,7 @@ namespace ContadorCaracteres {
             // 
             // lbQuantidadeLetra
             // 
-            this.lbQuantidadeLetra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbQuantidadeLetra.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbQuantidadeLetra.Location = new System.Drawing.Point(389, 63);
             this.lbQuantidadeLetra.Name = "lbQuantidadeLetra";
             this.lbQuantidadeLetra.Size = new System.Drawing.Size(69, 16);
@@ -96,7 +96,7 @@ namespace ContadorCaracteres {
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(251, 82);
             this.label3.Name = "label3";
@@ -106,7 +106,7 @@ namespace ContadorCaracteres {
             // 
             // lblTamanhoCampo
             // 
-            this.lblTamanhoCampo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTamanhoCampo.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTamanhoCampo.Location = new System.Drawing.Point(389, 82);
             this.lblTamanhoCampo.Name = "lblTamanhoCampo";
             this.lblTamanhoCampo.Size = new System.Drawing.Size(69, 16);
@@ -126,7 +126,7 @@ namespace ContadorCaracteres {
             this.Controls.Add(this.btnFonte);
             this.Controls.Add(this.txtFrase);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MinimumSize = new System.Drawing.Size(486, 147);
             this.Name = "FormPrincipal";

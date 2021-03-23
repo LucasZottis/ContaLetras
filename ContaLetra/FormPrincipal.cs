@@ -1,11 +1,17 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace ContadorCaracteres {
+namespace ContaLetrar {
     public partial class FormPrincipal : Form {
+
+        #region Atributos
 
         private int iAlturaTextBox;
         private bool bPrimeiraVez = true;
+
+        #endregion
+
+        #region
 
         public FormPrincipal()
         {
@@ -13,17 +19,25 @@ namespace ContadorCaracteres {
             iAlturaTextBox = txtFrase.Size.Height;
         }
 
+        #endregion
+
+        #region Eventos de formulário
+
+        private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                Close();
+            }
+        }
+
+        #endregion
+
+        #region Eventos de TextBox
+
         private void txtFrase_TextChanged(object sender, EventArgs e)
         {
             lbQuantidadeLetra.Text = txtFrase.Text.Length.ToString();
-        }
-
-        private void btnFonte_Click(object sender, EventArgs e)
-        {
-            if (fdEscolhaFonte.ShowDialog() == DialogResult.OK)
-            {
-                txtFrase.Font = fdEscolhaFonte.Font;
-            }
         }
 
         private void txtFrase_SizeChanged(object sender, EventArgs e)
@@ -47,12 +61,18 @@ namespace ContadorCaracteres {
             bPrimeiraVez = false;
         }
 
-        private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
+        #endregion
+
+        #region Eventos de Button
+
+        private void btnFonte_Click(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Escape)
+            if (fdEscolhaFonte.ShowDialog() == DialogResult.OK)
             {
-                Close();
+                txtFrase.Font = fdEscolhaFonte.Font;
             }
         }
+
+        #endregion
     }
 }
