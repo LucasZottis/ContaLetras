@@ -33,6 +33,8 @@ namespace ContadorCaracteres {
             this.btnFonte = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lbQuantidadeLetra = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblTamanhoCampo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -76,7 +78,7 @@ namespace ContadorCaracteres {
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(251, 70);
+            this.label2.Location = new System.Drawing.Point(251, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 16);
             this.label2.TabIndex = 3;
@@ -85,18 +87,40 @@ namespace ContadorCaracteres {
             // lbQuantidadeLetra
             // 
             this.lbQuantidadeLetra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbQuantidadeLetra.Location = new System.Drawing.Point(389, 70);
+            this.lbQuantidadeLetra.Location = new System.Drawing.Point(389, 63);
             this.lbQuantidadeLetra.Name = "lbQuantidadeLetra";
             this.lbQuantidadeLetra.Size = new System.Drawing.Size(69, 16);
             this.lbQuantidadeLetra.TabIndex = 4;
             this.lbQuantidadeLetra.Text = "0";
             this.lbQuantidadeLetra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(251, 82);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 16);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Tamanho campo:";
+            // 
+            // lblTamanhoCampo
+            // 
+            this.lblTamanhoCampo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTamanhoCampo.Location = new System.Drawing.Point(389, 82);
+            this.lblTamanhoCampo.Name = "lblTamanhoCampo";
+            this.lblTamanhoCampo.Size = new System.Drawing.Size(69, 16);
+            this.lblTamanhoCampo.TabIndex = 6;
+            this.lblTamanhoCampo.Text = "0";
+            this.lblTamanhoCampo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(470, 108);
+            this.Controls.Add(this.lblTamanhoCampo);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lbQuantidadeLetra);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnFonte);
@@ -122,5 +146,7 @@ namespace ContadorCaracteres {
         private System.Windows.Forms.Button btnFonte;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbQuantidadeLetra;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTamanhoCampo;
     }
 }

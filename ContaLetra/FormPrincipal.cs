@@ -30,7 +30,7 @@ namespace ContadorCaracteres {
         {
             if (!bPrimeiraVez)
             {
-                if ((txtFrase.Size.Height - iAlturaTextBox) > 0)
+                if ((txtFrase.Height - iAlturaTextBox) > 0)
                 {
                     Height += Math.Abs(iAlturaTextBox - txtFrase.Size.Height);
                     iAlturaTextBox = txtFrase.Size.Height;
@@ -41,6 +41,8 @@ namespace ContadorCaracteres {
                     iAlturaTextBox = txtFrase.Size.Height;
                 }
             }
+
+            lblTamanhoCampo.Text = txtFrase.Width.ToString();
 
             bPrimeiraVez = false;
         }
