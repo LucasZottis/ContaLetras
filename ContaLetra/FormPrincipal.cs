@@ -11,7 +11,7 @@ namespace ContaLetrar {
 
         #endregion
 
-        #region
+        #region Construtores
 
         public FormPrincipal()
         {
@@ -19,16 +19,14 @@ namespace ContaLetrar {
             iAlturaTextBox = txtFrase.Size.Height;
         }
 
-        #endregion
+        #endregion Construtores
 
         #region Eventos de formulário
 
         private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Escape)
-            {
+             if (e.KeyCode == Keys.Escape)
                 Close();
-            }
         }
 
         #endregion
@@ -43,7 +41,6 @@ namespace ContaLetrar {
         private void txtFrase_SizeChanged(object sender, EventArgs e)
         {
             if (!bPrimeiraVez)
-            {
                 if ((txtFrase.Height - iAlturaTextBox) > 0)
                 {
                     Height += Math.Abs(iAlturaTextBox - txtFrase.Size.Height);
@@ -54,23 +51,32 @@ namespace ContaLetrar {
                     Height -= Math.Abs(iAlturaTextBox - txtFrase.Size.Height);
                     iAlturaTextBox = txtFrase.Size.Height;
                 }
-            }
 
             lblTamanhoCampo.Text = txtFrase.Width.ToString();
 
             bPrimeiraVez = false;
         }
 
-        #endregion
+        private void txtFrase_KeyDown( object sender, KeyEventArgs e )
+        {
+            switch ( e.KeyData )
+            {
+                case Keys.Escape:
+                {
+                    Close();
+                    break;
+                }
+            }
+        }
+
+        #endregion Eventos de TextBox
 
         #region Eventos de Button
 
         private void btnFonte_Click(object sender, EventArgs e)
         {
             if (fdEscolhaFonte.ShowDialog() == DialogResult.OK)
-            {
                 txtFrase.Font = fdEscolhaFonte.Font;
-            }
         }
 
         #endregion

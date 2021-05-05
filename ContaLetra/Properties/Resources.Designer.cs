@@ -59,5 +59,15 @@ namespace ContaLetras.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
+        /// </summary>
+        internal static System.Drawing.Icon iconfinder_letter_ABC_1553073 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_letter_ABC_1553073", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }
